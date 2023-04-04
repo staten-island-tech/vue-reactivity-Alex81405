@@ -1,85 +1,40 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+    <h1>Scoops</h1>
+    <h2>I scream, you scream. We all scream.</h2>
+    <div id="app">
+      <section class="nav">
+        <router-link to="/">Order</router-link> |
+        <router-link to="/confirm">Check Out</router-link>
+      </section>
+      <router-view />
     </div>
-  </header>
-
-  <RouterView />
-</template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+  </template>
+  
+  <style scoped>
+  body{
+    background-color:rgb(255, 255, 255)
   }
-
-  .logo {
-    margin: 0 2rem 0 0;
+  h1{
+    font: 30px;
+    text-align: center;
+    font-weight: 600;
   }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+   h2, h3{
+    color:black;
+    text-align: center;
+    text-align: center;
+    padding: 10px;
+    margin:10px
   }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
+  .nav {
+    color: rgb(0, 0, 0);
     font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgb(202, 141, 193);
+    text-align: center;
+    padding: 10px;
+    margin:10px;
+    border-color: black;
   }
-}
-</style>
+  </style>
