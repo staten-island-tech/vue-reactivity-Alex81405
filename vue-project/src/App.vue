@@ -1,6 +1,5 @@
 <template>
-    <h1>Scoops</h1>
-    <h2>I scream, you scream. We all scream.</h2>
+    <h1>Ice Cream</h1>
     <div id="app">
       <section class="nav">
         <router-link to="/">Order</router-link> |
